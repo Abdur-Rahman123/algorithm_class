@@ -1,0 +1,78 @@
+console.log(506+3);
+console.log("hello"+" "+'world');
+2/
+let b=40
+let a='hello '+b;
+console.log(a);
+3/
+let a='rahman';
+let b=23;
+console.log(`hello my name is ${a} and I am ${b} Years old`);
+4/
+let myarray=['hi','hello',2,2];
+console.log(myarray);
+5/array of array
+let myarray=[1,[9,7],3,4,5];
+console.log(myarray[1][0]);
+6/object read
+
+let myobject={
+  'name':'Rahman',
+  'age':23,
+   'gender':'male'
+}
+console.log(myobject.name)
+
+5/Json 
+let json=[
+    {
+        'id':1,
+        'name':'rahmim',
+        'email':'rahmim@gmail.com'
+    },
+    {
+        'id':2,
+        'name':'karim',
+        'email':'karim@gmail.com'
+    },
+    {
+        'id':3,
+        'name':'jamil',
+        'email':'jamil@gmail.com'
+    }
+];
+console.log(json[1].name);
+
+6/asynchonous
+
+console.log('one');
+setTimeout( ()=> {
+    console.log('two');
+}, 2000);
+console.log('three');
+7/
+
+///callback function
+function add(a,b,callback){
+    console.log(`the sum of ${a} and ${b} is ${a+b}`);
+    callback();
+}
+//function message(){
+    //console.log('adding is sussessfully done');
+//}
+add(5,5,()=>{
+    console.log('adding is sussessfully done');
+});
+8//
+
+let promise=new Promise((resolve,reject)=>{
+    let result=2;
+    if(result==2){
+        resolve('success');
+    }else{
+        reject('fail');
+    }
+
+})
+promise.then((mess)=>console.log(mess)).catch((err)=>console.log(err));
+//promise.catch(()=>console.log('you fail'));
