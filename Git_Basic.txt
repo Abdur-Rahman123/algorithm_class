@@ -1,0 +1,29 @@
+1/Git config user name Rahman120(use to set user name is git)
+2/git log(use to check push history in this branch)
+3/git status(use to check untracable file)
+4/git remote -v(if have a reposotory)
+5/git branch -M Main(use to change branch)
+6/git branch --all(check all branch)
+     for update reposotory
+     git status
+     git add .
+     git commit -m "add new command"
+     git push origin Main/branch name
+7/git branch story-starter(create new branch)
+8/git checkout story-starter(change branch)
+9/git push --set--upstream origin karim120(last command for push from karim120 branch)/git push origin karim120
+10/git checkout -b development(add branch and swich it)
+11/git pull origin development(pull the code from development branch)
+12/git merge story-starter(merge code from story starter)
+13/git stash(hide the last updated code from main code and can use it next time)
+14/git stash list(give list of stash)
+15/git stash pop(get the stash element)
+16/git stash drop(drop stash element)
+17/git commit --amend -m "add new line"(new for edit commit message)
+
+Different between git and github
+Git is a revision control system, a tool to manage your source code history.
+
+GitHub is a hosting service for Git repositories.
+
+So they are not the same thing: Git is the tool, GitHub is the service for projects that use Git.
