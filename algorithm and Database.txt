@@ -1,0 +1,120 @@
+                                                  between the array and linked list 
+1/An array is a collection of elements of a similar data type. 
+A linked list is a collection of objects known as a node where node consists of two parts, i.e., data and address.
+
+2/Array elements store in a contiguous memory location.
+Linked list elements can be stored anywhere in the memory or randomly stored.
+
+3/Array works with a static memory. Here static memory means that the memory size is fixed and cannot be changed at the run time.
+ The Linked list works with dynamic memory. Here, dynamic memory means that the memory size can be changed at the run time according to our requirements.
+
+4/Array elements are independent of each other. 	
+Linked list elements are dependent on each other. As each node contains the address of the next node so to access the next node, we need to access its previous node.
+
+5/In the case of an array, memory is allocated at compile-time. 	
+In the case of a linked list, memory is allocated at run time.
+
+                                     Linked lists are preferable over arrays when:
+
+
+   1/ you don't know how many items will be in the list. With arrays, you may need to re-declare and copy memory if the array grows too big.
+   2/ you don't need random access to any elements.
+
+                                             BUBLE SORT
+sort 2 element then 2nd iteration sort orther 2 element, this way bubble sorting algorithm work.after complete one inner iteration the biggest number in the last position.
+
+#include<iostream>
+using namespace std;
+int main ()
+{
+   int i, j,temp,pass=0;
+   int a[10] = {10,2,0,14,43,25,18,1,5,45};
+   cout <<"Input list ...\n";
+   for(i = 0; i<10; i++) {
+      cout <<a[i]<<"\t";
+   }
+cout<<endl;
+for(i = 0; i<10; i++) {
+   for(j = 0; j<10-1-i; j++)
+   {
+      if(a[j] < a[i]) {
+         temp = a[i];
+         a[i] = a[j];
+         a[j] = temp;
+      }
+   }
+pass++;
+}
+cout <<"Sorted Element List ...\n";
+for(i = 0; i<10; i++) {
+   cout <<a[i]<<"\t";
+}
+cout<<"\nNumber of passes taken to sort the list:"<<pass<<endl;
+return 0;
+}
+
+                                                      SELECTION SORT
+
+1st find the smallest number from the array then swap the position between this 1st input with smallest input.2nd iteration we will start from input/array number 2 because we find the smallest number in the 1st iteration.
+
+for(j=0; j<n-1;j++)
+   int currentMin = j;
+   for(i=j+1;i<n;i++)
+     if(arrayList[i] < arrayList[currentMin])
+        currentMin = i;
+     if(currentMin != j)
+        swap(arrayList[j], arrayList[currentMin]);
+
+use:Selection sort can be good at checking if everything is already sorted. It is also good to use when memory space is limited.
+
+                                                             INSERTION SORT(3)
+1st check 1st 2 number,which one is smaller swap between this 2 value,then you have check the 3rd value weather 1st smaller or big if it is smaller the go this value in the 1st positon.
+Uses: Insertion sort is used when number of elements is small. It can also be useful when input array is almost sorted, only few elements are misplaced in complete big array.
+                                                               BINARY SEARCH TREE
+left of any node is smaller than the root element and right element of the node is greater than root element.
+
+                                                               TREE
+A tree is a data structure defined as a collection of nodes. Nodes represent value and nodes are connected by edges.
+
+                                                               GRAPH	
+                      A Graph is a non-linear data structure consisting of nodes and edges.
+
+                                                              TREE VS GRAPH
+There is no unique node called root in graph.
+There is a unique node called root in trees.
+
+A cycle can be formed.
+There will not be any cycle.
+
+Applications: For finding shortest path in networking graph is used.
+Applications: For game trees, decision trees, the tree is used.
+
+                                                              	LINEAR DATA STRUCTURE
+A Linear data structure have data elements arranged in sequential manner and each member element is connected to its previous and next element. This connection helps to traverse a linear data structure in a single level and in single run. Such data structures are easy to implement as computer memory is also sequential. Examples of linear data structures are List, Queue, Stack, Array etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
