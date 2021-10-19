@@ -1,3 +1,6 @@
+//video that follow
+https://www.youtube.com/watch?v=BM_lSZPMClo
+
 SINGLE RESPONSIBALITY PRINCIPLE
 
 one class will performe only one task.suppose,In a bank class you have to performe load related task,message otp task and a lot more .It will be single reponsibality principle when you create message otp and load related task in seperate class.
