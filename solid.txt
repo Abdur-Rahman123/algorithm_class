@@ -1,0 +1,23 @@
+SINGLE RESPONSIBALITY PRINCIPLE
+
+one class will performe only one task.suppose,In a bank class you have to performe load related task,message otp task and a lot more .It will be single reponsibality principle when you create message otp and load related task in seperate class.
+
+Open-Closed Principle
+
+open for extension and close for modification.you should able to extend a class behaviour without modifying it.
+suppose you want to implement a sms service for whatsapp,fb,tweer etc..make a interface and extend it for whatsapp,fb and tweer.you don't have to modify existing class when you implement for same sms service for linkedin .you just implement interface sms service and write logic in linkedin class.
+
+Liskov Substitution Principle
+
+If class B extends class A and it can completely replace class A. Thats call Liskov Substitution Principle.suppose A socialMedia abstract class have chatWithfriend,Post,groupVideo call abstract function.If Facebook implement this abstract class then it's a Liskov Substitution Principle because facebook have all feature but if whatsapp implement it,Then it will not Liskov Substitution Principle because whatsapp doesn't support post share with friend. To overcome this problem we can use multiple interface. Interface only have post and another one only have groupChat.faceboom will implement both of them and it's completely behave like liskov because child completely replace 2 of the parents.and whatsapp will implement chatWith friends and groupCall.
+
+Interface Segregation Principle
+
+Don't force user to implement unnecessary method.
+let's say we create a payment interface where have payment card,check balance etc.
+now we are creating banking calss where user have payment card and also user check their balance but same interface we implement in mobile banking but mobile banking don't have payment card but we force them to implement it.To overcome this problem we can create 2 interface, one for check balance and another for card.bank will implement both of them but Mobile banking will implement only check balance.
+
+Dependency Inversion Principle
+
+High level module should not depend on low level module but both should depend on abstraction. 
+suppose a shopkeeper care about card, he don't care about it's David card or credit card.we create a shopkeeper class then we have hardcoded it wheather it's david card or crdit card but if we use interface and implement same interface for david and credit card.we don't have to hardcode it.we only have to use this interface. 
