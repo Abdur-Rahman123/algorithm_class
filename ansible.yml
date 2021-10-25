@@ -1,0 +1,35 @@
+ Courses:
+      course_name: "Djungo course"
+      version: 1.5
+      is_available: true
+      price: &myprice 199
+      release_date: 2020-08-07 12:34:45   
+      # tags and course Ta both are array
+      tags:
+        -python
+        -webdev
+        -mysql
+      course_Ta: ["rahman","karim",zabbar] 
+      # 2 object write in same style other is different
+      ta_details:
+       - name: "hridoy"
+         email: "hridoy@gmail.com"
+         role: "content admin"
+       - name: "mithun"
+         email: "mithun@gmail.com"
+         role: "Engineer"
+       - {name: "rahman",email: "rahman@gmail.com",role: "Lever"}
+      short_description: >
+          here is the short description 
+          of django course
+      # use of variables
+      process_payments: *myprice
+
+      adv: &adv
+        mykey: myval
+        theykey: theyval
+        
+# get alll the value of adv
+      another_adv: 
+        one: two
+        <<: *adv
