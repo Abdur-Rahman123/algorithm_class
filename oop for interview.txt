@@ -1,0 +1,67 @@
+Purposes of Interfaces
+
+multiple implementations of same stuff
+when you apply an interface to multiple different classes because you need
+some sort of convention that these classes are goonna be able to do some stuff or have some functionality.
+create loosely coupled software.
+hide implementation details of classes from each other
+
+loosely coupling vs tightly coupling
+
+In object oriented design, the amount of coupling refers to how much the design of
+ one class depends on the design of another class. In other words, how often do
+ changes in class A force related changes in class B? Tight coupling means
+ the two classes often change together, loose coupling means they are mostly independent.
+ In general, loose coupling is recommended because it's easier to test and maintain.
+
+why oop is used?
+OOP language allows to break the program into the bit-sized problems that can be solved easily (one object at a time).
+
+4 principle of oop
+encapsulation, 
+abstraction, 
+inheritance, and 
+polymorphism
+
+encapsulation:
+Encapsulation make sure that sensitive data is hidden from user.
+To achieve this,we have to class variable/attribute as private.
+To read or modify the value of a private member we can provide get and set method.
+
+Abstraction:
+Abstraction is a process of providing only the essential details to the outside 
+world and hiding the internal details.It represent only the essential details in program.
+
+Inheritance:
+The capacity of a class to derive properties and characteristics from another class is 
+called inheritance.
+
+Polymorphism:
+Polymorphism is the method in an object-oriented programming language that performs different things as per the object’s class,
+ which calls it. With Polymorphism, a message is sent to multiple class objects,
+ and every object responds appropriately according to the properties of the class. 
+Like:animal class have method sound and cat and dog class inheriate it and they have same
+ method sound.but when we create object of animal class and call sound method then the animal
+ class method call same way when we create object of cat and dog and call their 
+sound method they will call specific function of cat and dog.
+
+
+Interface vs abstract class
+1/Interface can only have abstract method
+1/Abstract class can have abstract and non abstract method
+2/It support multiple inheritance
+2/It doesn't support multiple inheritance
+3/can only have static and final variable
+3/can have static, non static,final and non final variable
+4/fully abstract
+4/partial abstract
+5/Interface Animal{
+void eat()
+}
+5/abstract class Animal{
+abstract void eat()
+}
+
+
+
+
