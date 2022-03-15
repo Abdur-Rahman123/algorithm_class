@@ -1,0 +1,8 @@
+Session vs cookies
+
+The concept is storing persistent data across page loads for a web visitor.
+ Cookies store it directly on the client. Sessions use a cookie stored on the server side.
+
+It is preferred to use sessions because the actual values are hidden from the client,
+and you control when the data expires and becomes invalid. If it was all based on cookies,
+a user (or hacker) could manipulate their cookie data and then play requests to your site.
