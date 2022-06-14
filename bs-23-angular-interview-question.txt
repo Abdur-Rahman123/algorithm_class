@@ -94,3 +94,10 @@ providers: [
   multi: true
  }
 ]
+
+High-level Differences between Template-driven and Reactive Forms
+Below are some of the high-level differences between the two types:
+
+Template-driven forms make use of the "FormsModule", while reactive forms are based on "ReactiveFormsModule".
+Template-driven forms are asynchronous in nature, whereas Reactive forms are mostly synchronous.
+In a template-driven approach, most of the logic is driven from the template, whereas in reactive-driven approach, the logic resides mainly in the component or typescript code. Let us get started by generating a component and then we'll update our form code.
