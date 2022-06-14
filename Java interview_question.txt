@@ -52,6 +52,7 @@ Abc obj=Abc.getInstance();
 }
 
 Lambda Expression in java
+A lambda expression can implement a functional interface by defining an anonymous function that can be passed as an argument to some method
 
 import java.util.*;
 import java.lang.*;
