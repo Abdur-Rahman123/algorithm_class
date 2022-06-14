@@ -22,3 +22,57 @@ select salary from (select salary from employee ORDER BY salary DESC limit 2) OR
 
 3/TOP
 select TOP salary from(select TOP 2 salary from employee ORDER BY salary DESC) ORDER BY salary ASC.
+
+why singletone is used?
+
+A singleton should be used when managing access to a resource which is shared by the entire application, and it would be destructive to potentially have multiple instances of the same class. Making sure that access to shared resources thread safe is one very good example of where this kind of pattern can be vital.
+
+Managing a connection (or a pool of connections) to a database.
+
+I would use it also to retrieve and store informations on external configuration files.
+
+When using Singletons, you should make sure that you're not accidentally concealing dependencies. Ideally, the singletons (like most static variables in an application) be set up during the execution of your initialization code for the application (static void Main() for C# executables, static void main() for java executables) and then passed in to all other classes that are instantiated which require it. This helps you maintain testability.
+
+class Abc{
+ static Abc obj=new Abc();
+
+private Abc{}
+
+public static Abc getInstance(){
+
+return obj;
+} 
+
+}
+
+public class Singleton{
+public static void main(String[] args){
+Abc obj=Abc.getInstance();
+}
+}
+
+Lambda Expression in java
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+interface A{
+	void show(int i);
+}
+// class xyz implements A{
+// 	public void show(){
+// 		System.out.println("hello");
+// 	}
+// }
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		A obj;
+		obj = i->System.out.println("hello "+ i);
+		obj.show(6);
+	}
+} 
+
+
