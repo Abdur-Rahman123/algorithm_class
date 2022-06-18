@@ -101,3 +101,15 @@ Below are some of the high-level differences between the two types:
 Template-driven forms make use of the "FormsModule", while reactive forms are based on "ReactiveFormsModule".
 Template-driven forms are asynchronous in nature, whereas Reactive forms are mostly synchronous.
 In a template-driven approach, most of the logic is driven from the template, whereas in reactive-driven approach, the logic resides mainly in the component or typescript code. Let us get started by generating a component and then we'll update our form code.
+What is observer and observable? 
+Observable is a stream of events or data. They are often returned from Angular methods, such as the http.get and the myinputBox.valueChanges.
+Subscribing "kicks off" the observable stream. Without a subscribe (or an async pipe) the stream won't start emitting values.
+
+Observable is like a youtube channel of someone else. 
+(( It uploads new videos(data) from time to time, so it is a data source for you))
+
+Your youtube account is an Observer
+
+Your youtube account (Observer) can only get notifications about whether someone else's youtube channel (Observable) has uploaded a new video (has new data) or made a livestream (new event) only if you have subscribed to that channel
+
+
