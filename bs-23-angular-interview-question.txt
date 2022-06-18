@@ -111,5 +111,12 @@ Observable is like a youtube channel of someone else.
 Your youtube account is an Observer
 
 Your youtube account (Observer) can only get notifications about whether someone else's youtube channel (Observable) has uploaded a new video (has new data) or made a livestream (new event) only if you have subscribed to that channel
+Why promise??? 
 
+Promises give us the ability to write cleaner code but reducing (or entirely removing) call-back hell.
+
+In addition, callbacks are the backbone of some new syntax features coming in ES2017, such as async functions, which allows an even cleaner way of writing code.
+
+The third thing that promises do is not immediately apparent when you first learn the syntax -- automatic error handling. Promises allow errors to be passed down
+ the chain and handled in one common place without having to put in layers of manual error handling.
 
