@@ -119,4 +119,11 @@ In addition, callbacks are the backbone of some new syntax features coming in ES
 
 The third thing that promises do is not immediately apparent when you first learn the syntax -- automatic error handling. Promises allow errors to be passed down
  the chain and handled in one common place without having to put in layers of manual error handling.
-
+ 
+ Es6 feature
+The let keyword
+The const keyword
+Arrow Functions
+Classes
+Promises
+The For/Of Loop
