@@ -127,3 +127,33 @@ Arrow Functions
 Classes
 Promises
 The For/Of Loop
+
+why promise is used???
+
+ One of the arguments for using promises is getting rid of the so-called "callback hell", which looks something like this:
+ setTimeout(function () {
+    setTimeout(function() {
+        setTimeout(function() {
+            // do something
+        }); 
+    }); 
+});
+simply using promises alone will also not prevent that, like in the following sample:
+samplePromise().then(function () {
+    samplePromise().then(function () {
+        samplePromise().then( function () {
+            // do something
+        });
+    });
+});
+That being said, there's one use case that might arguably benefit from a promise, 
+and that is when exceptions from more than one asynchronous call could be caught by the same catch block:
+new Promise(function (resolve, reject) {
+    resolve("Blah");
+}).then(function () {
+    // do something
+}).then(function () {
+    // do something
+}).catch(function (reason) {
+    // error handling
+});
