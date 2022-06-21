@@ -80,4 +80,16 @@ Main purposes of Java Lambda expressions are as follows:
 
 Functional Programming: We use Lambda expressions to pass Code as Data. We can pass a function as an argument to another function in Java. This increases the power of our program.
 
+JPA vs Hibernate
+//https://www.geeksforgeeks.org/java-jpa-vs-hibernate/
 
+JPA is only a specification, it is not an implementation.
+It is a set of rules and guidelines to set interfaces for implementing object-relational mapping, .
+It needs a few classes and interfaces.
+It supports simple, cleaner, and assimilated object-relational mapping.
+It supports polymorphism and inheritance.
+Dynamic and named queries can be included in JPA.
+
+Hibernate is an implementation of JPA guidelines.
+It helps in mapping Java data types to SQL data types.
+It is the contributor of JPA.
