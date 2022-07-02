@@ -31,6 +31,7 @@ Managing a connection (or a pool of connections) to a database.
 
 I would use it also to retrieve and store informations on external configuration files.
 
+
 When using Singletons, you should make sure that you're not accidentally concealing dependencies. Ideally, the singletons (like most static variables in an application) be set up during the execution of your initialization code for the application (static void Main() for C# executables, static void main() for java executables) and then passed in to all other classes that are instantiated which require it. This helps you maintain testability.
 
 class Abc{
@@ -95,3 +96,8 @@ Dynamic and named queries can be included in JPA.
 Hibernate is an implementation of JPA guidelines.
 It helps in mapping Java data types to SQL data types.
 It is the contributor of JPA.
+
+
+Array vs ArrayList
+An array is a dynamically-created object. It serves as a container that holds the constant number of values of the same type.
+In Java, ArrayList is a class of Collections framework. It implements List<E>, Collection<E>, Iterable<E>, Cloneable, Serializable, and RandomAccess interfaces.
