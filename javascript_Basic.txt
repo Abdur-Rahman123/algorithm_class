@@ -76,3 +76,5 @@ let promise=new Promise((resolve,reject)=>{
 })
 promise.then((mess)=>console.log(mess)).catch((err)=>console.log(err));
 //promise.catch(()=>console.log('you fail'));
+https://stackoverflow.com/questions/22539815/arent-promises-just-callbacks
+
