@@ -101,3 +101,18 @@ It is the contributor of JPA.
 Array vs ArrayList
 An array is a dynamically-created object. It serves as a container that holds the constant number of values of the same type.
 In Java, ArrayList is a class of Collections framework. It implements List<E>, Collection<E>, Iterable<E>, Cloneable, Serializable, and RandomAccess interfaces.
+
+List vs ArrayList in Java
+
+List is an interface
+ArrayList is a class
+List interface extends the Collection framework
+ArrayList extends AbstractList class and implements List interface
+List cannot be instantiated.
+ArrayList can be instantiated.
+List interface is used to create a list of elements(objects) that are associated with their index numbers.
+ArrayList class is used to create a dynamic array that contains objects.
+List interface creates a collection of elements that are stored in a sequence and they are identified and accessed using the index.
+ArrayList creates an array of objects where the array can grow dynamically.
+
+
