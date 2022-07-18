@@ -115,4 +115,13 @@ ArrayList class is used to create a dynamic array that contains objects.
 List interface creates a collection of elements that are stored in a sequence and they are identified and accessed using the index.
 ArrayList creates an array of objects where the array can grow dynamically.
 
+Why bean annotation is used?
+Bean annotation is used above a function and it's always 
+Use when you need to you need a third party library class.
+
+Why components annotation is used??
+Components annotation is used when you need to declared
+A class as components and without add this you can't autowired 
+It.
+
 
