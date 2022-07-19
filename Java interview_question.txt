@@ -124,4 +124,13 @@ Components annotation is used when you need to declared
 A class as components and without add this you can't autowired 
 It.
 
+java String is immutable means and why?
+When we create a string in java like String s1="hello"; then an object will be created in string pool(hello) 
+and s1 will be pointing to hello.Now if again we do String s2="hello"; then another object will not be created 
+but s2 will point to hello because JVM will first check if the same object is present in string pool or not.
+If not present then only a new one is created else not.
+
+String is Immutable in Java because String objects are cached in String pool. 
+Since cached String literals are shared between multiple clients there is always a risk, 
+where one client's action would affect all another client.
 
