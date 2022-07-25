@@ -157,3 +157,10 @@ new Promise(function (resolve, reject) {
 }).catch(function (reason) {
     // error handling
 });
+
+generics type in typescript
+function getvalue <Type> (args:Type):Type{
+    return args;
+}
+let value:number=getvalue<number>(6)
+console.log('value is :',value);
