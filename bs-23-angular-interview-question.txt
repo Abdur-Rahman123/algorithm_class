@@ -221,3 +221,16 @@ setTimeout(()=>console.log(i));
 }
 
 }
+
+///lifeCycle hook
+
+ngOnchanges():when a input chage is detected or when parent child data value is changes .
+It's take a SimpleChange object which optain current and previous change.
+
+ngOnInit():Is a life cycle hook called by Angular to indicate that Angular is done creating the component.
+It is use when you want to show some data after page render.
+
+ngDoCheck():This hook can be interpreted as an “extension” of ngOnChanges. 
+You can use this method to detect changes that Angular can’t or won’t detect.
+It is called in every change detection, immediately after the ngOnChanges and ngOnInit hooks.
+
