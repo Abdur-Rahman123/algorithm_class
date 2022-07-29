@@ -251,3 +251,5 @@ call every time when the view is change.
 ngOnDestroy():Cleanup just before Angular destroys the directive or component. 
 Unsubscribe Observables to avoid memory leaks. 
 
+why viewChild is used:viewChild is a decorator used for manipulate/update
+ child component and use for get /update any DOM element;
