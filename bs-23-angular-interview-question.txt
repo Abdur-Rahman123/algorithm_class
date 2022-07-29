@@ -227,10 +227,27 @@ setTimeout(()=>console.log(i));
 ngOnchanges():when a input chage is detected or when parent child data value is changes .
 It's take a SimpleChange object which optain current and previous change.
 
-ngOnInit():Is a life cycle hook called by Angular to indicate that Angular is done creating the component.
+ngOnInit():It's call when a this class is create,when page is ready to view.It's call only one time.
+ it Is a life cycle hook called by Angular to indicate that Angular is done creating the component.
 It is use when you want to show some data after page render.
 
 ngDoCheck():This hook can be interpreted as an “extension” of ngOnChanges. 
 You can use this method to detect changes that Angular can’t or won’t detect.
 It is called in every change detection, immediately after the ngOnChanges and ngOnInit hooks.
+
+ngAfterContentInit():It is call when our content is initialized.It's call only one time.
+It's call when after ngDoCheck().
+
+ngAfterContentChecked():It's is call when a ngContent value is change. 
+ngContent is when a component is nedd a component again again and you need to
+chage e value also.That time ngContent is used.
+
+ngAfterViewInit():Respond after Angular initializes the component's views 
+and child views, or the view that contains the directive.It's call only one time.
+
+ngAfterViewChecked():It's call when a view of the component is change.
+call every time when the view is change.
+
+ngOnDestroy():Cleanup just before Angular destroys the directive or component. 
+Unsubscribe Observables to avoid memory leaks. 
 
