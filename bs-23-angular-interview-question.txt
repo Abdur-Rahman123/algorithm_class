@@ -253,3 +253,44 @@ Unsubscribe Observables to avoid memory leaks.
 
 why viewChild is used:viewChild is a decorator used for manipulate/update
  child component and use for get /update any DOM element;
+ 
+ 
+ What is the difference between Observable and a Subject in rxjs?
+ 
+ Observables are unicast by design and Subjects are multicast by design.
+
+if you look at the below example - each subscription receives the different values as observables developed as unicast by design.
+import {Observable} from 'rxjs';
+
+let obs = Observable.create(observer=>{
+   observer.next(Math.random());
+})
+
+obs.subscribe(res=>{
+  console.log('subscription a :', res); //subscription a :0.2859800202682865
+});
+
+obs.subscribe(res=>{
+  console.log('subscription b :', res); //subscription b :0.694302021731573
+});
+
+this could be weird if you are expecting the same values on both the subscription.
+
+we can overcome this issue using Subjects. Subjects is similar to event-emitter and
+it does not invoke for each subscription. consider the below example
+import {Subject} from 'rxjs';
+
+let obs = new Subject();
+
+obs.subscribe(res=>{
+  console.log('subscription a :', res); // subscription a : 0.91767565496093
+});
+
+obs.subscribe(res=>{
+  console.log('subscription b :', res);// subscription b : 0.91767565496093
+});
+
+obs.next(Math.random());
+
+both the subscription are got the same output value!.
+ 
