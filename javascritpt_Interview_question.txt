@@ -1,0 +1,14 @@
+call vs apply vs bind
+
+function myfun(c,d){
+    console.log(this);
+    console.log(this.a+this.b+c+d);
+}
+//one function share different object that time call,bind and apply will use.
+//difference between call and apply: when argument pass call will pass argument by seperating "," and apply will call by array type[] .
+// myfun.call({a:40,b:60},1,2);
+// myfun.apply({a:100,b:200},[2,3]);
+//bind will call when you have to bind something don't have to call now.this time you have to call bind.
+let test=myfun.bind({a:10,b:30},40,50);
+test();
+//myfun();
