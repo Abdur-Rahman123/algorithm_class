@@ -1,0 +1,20 @@
+Difference between Horizontal vs. Vertical Scaling
+
+vertical scaling means that when a lot of request come you just increase machine size.
+Horizontal scaling means that when a lot of request come you just increase number of machine.
+
+key difference between Vertical and Horizontal scaling
+
+Horizental 
+1/Load balancing request
+2/RESILIENT(if one machine fail request forward to another one)
+3/ communication throw network(which is slow).
+4/Data inconsistance
+5/scale well when your user increase(cause you can easily add another machine)
+
+vertical
+1/N/A
+2/single point failure.
+3/Inter process communication(which is fast cause same machine).
+4/ Data consistance
+5/Hadware limitation(you can't add big and bigger machine)
