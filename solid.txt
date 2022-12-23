@@ -9,6 +9,9 @@ Open-Closed Principle
 
 open for extension and close for modification.you should able to extend a class behaviour without modifying it.
 suppose you want to implement a sms service for whatsapp,fb,tweer etc..make a interface and extend it for whatsapp,fb and tweer.you don't have to modify existing class when you implement for same sms service for linkedin .you just implement interface sms service and write logic in linkedin class.
+“Open to extension” means that you should design your classes so that new functionality can be added as new requirements are generated. “Closed for modification” means that once you developed a class you should never modify it, except to correct bugs.It means that you should put new code in new classes/modules. Existing code should be modified only for bug fixing. New classes can reuse existing code via inheritance.
+
+Open/closed principle is intended to mitigate risk when introducing new functionality. Since you don't modify existing code you can be assured that it wouldn't be broken. It reduces maintenance cost and increases product stability.
 
 Liskov Substitution Principle
 
