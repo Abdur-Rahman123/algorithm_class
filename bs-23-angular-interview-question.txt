@@ -316,13 +316,17 @@ AOT - Compile TypeScript during build phase.
     
     TypeScript offers several advantages over JavaScript, including:
     
-Strong typing: TypeScript allows for the use of static types, which can help catch type errors during development, making code more predictable and less prone to runtime errors.
+Strong typing: TypeScript allows for the use of static types, 
+which can help catch type errors during development, making code more predictable and less prone to runtime errors.
 
-IntelliSense: TypeScript's static type system enables IDEs and editors to provide better code completion and suggestions, making it easier to write code quickly and accurately.
+IntelliSense: TypeScript's static type system enables IDEs and editors to provide better code completion and suggestions, 
+making it easier to write code quickly and accurately.
 
-Class and interface: TypeScript has support for classes and interfaces, which can help with object-oriented programming and code organization.
+Class and interface: TypeScript has support for classes and interfaces, 
+which can help with object-oriented programming and code organization.
 
-Better scalability: TypeScript's features make it well-suited for large and complex projects, making it easier to maintain and scale the codebase over time.
+Better scalability: TypeScript's features make it well-suited for large and complex projects, 
+making it easier to maintain and scale the codebase over time.
 
 
  
