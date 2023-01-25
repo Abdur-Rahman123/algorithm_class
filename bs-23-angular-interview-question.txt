@@ -328,5 +328,21 @@ which can help with object-oriented programming and code organization.
 Better scalability: TypeScript's features make it well-suited for large and complex projects, 
 making it easier to maintain and scale the codebase over time.
 
+if javascript have class why should I use typescript code .
+JavaScript classes have some limitations compared to TypeScript classes. 
+For example, JavaScript classes do not have private or protected members, 
+which makes it difficult to properly encapsulate the implementation details of a class.
+TypeScript classes, on the other hand, have support for private and protected members, 
+which can help with code organization and maintainability.
+
+TypeScript's static type system allows for more robust type checking and better code completion
+and suggestions in IDEs and editors. This can help developers catch type errors during development
+and make it easier to write and understand code.
+
+TypeScript's interfaces provide a way to define a contract for an object's shape,
+which can help with code organization and maintainability. JavaScript does not have a built-in way to define interfaces,
+so developers have to use other techniques such as comments or TypeScript's interfaces to achieve similar functionality.
+
+
 
  
