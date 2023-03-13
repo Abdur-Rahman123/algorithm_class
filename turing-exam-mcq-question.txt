@@ -1,0 +1,491 @@
+1/Select the correct answer that aligns text to the full width of the available box.
+1.right 
+2.full 
+3.center 
+4.justify
+
+2/What would be the output of the following code?
+const a = [1, 2];
+a[0] = 10;]
+a[1] = 20;
+a[2] = 30;
+console.log(a);
+
+3/Select the property value for wrap-flow that will allow the text to wrap along both sides of an
+element.
+both A
+all B
+left and right C
+cross D
+
+4/You are implementing a REST API. What are the differences between PUT and POST?
+POST sends data
+to a particular URI
+and expects the
+resource at that
+URI to deal with
+the request. The
+web server at this
+point can decide
+what to do with the
+data in the context
+of the specified
+resource
+A
+PUT puts a file or
+resource at a
+particular URI and
+exactly at that URI.
+If there is already a
+file or resource at
+that URI, PUT
+changes that file or
+resource. If there
+is no resource or
+file there, PUT
+creates one
+B
+PUT is idempotent,
+meaning, invoking
+it any number of
+times will not have
+any impact on
+resources
+C
+POST is not
+idempotent D
+All of the above E
+
+5/How can you ensure that all necessary fields are populated before a form can be submitted?
+Write a JavaScript
+function to
+evaluate all the
+controls on the
+form for content.
+A
+On the server,
+evaluate all the
+controls for data
+and return an error
+page for
+missing content.
+B
+Add the required
+attribute on each
+control so that
+users get a
+message that the
+field is required.
+C
+Add a label to the
+page to let users
+know which
+controls they must
+fill in.
+D
+6/Which event occurs when a DOM element receives the cursor?
+mouseenter A
+change B
+keydown C
+mouseleave D
+
+7/Which of the following correctly creates a WebSocket connection?
+wsConnection
+= new
+WebSocket("ht
+tp://turing.1
+2345.com");
+A
+wsConnection
+= new
+WebSocket("tc
+p://turing.12
+345.com",
+["soap",
+"xmpp"]);
+B
+wsConnection
+= new
+WebSocket("ws
+://turing.123
+45.com",
+["soap",
+"xmpp"]);
+C
+wsConnection
+= new
+WebSocket("ft
+p://turing.12
+345.com",
+["soap",
+"xmpp"]);
+D
+
+8/Select the correct way to create an object from a JSON string stored in a variable called
+jsonString?
+var o =
+JSON.split(jsonStri
+ng);
+A
+var o =
+JSON.stringify(json
+String);
+B
+var o =
+JSON.parse(jsonSt
+ring);
+C
+var 0 =
+JSON.join(jsonStri
+ng);
+D
+
+9/Why is checking for null a good practice?
+Checking for null
+prevents the use of
+an object before
+it's initialized.
+A
+Checking for null
+prevents errors
+resulting in NaN. B
+Checking for null
+prevents the need
+to throw custom
+errors. C
+
+10/Which list identifies the properties that need to be set up to make an AJAX call?
+cache, datatype,
+success A
+url, cache,
+datatype, success B
+url, datatype,
+onsuccess C
+url, datatype,
+oncomplete D
+
+11/Which function should never be used to run JavaScript?
+execute A
+JSDynamic B
+eval C
+evaluate D
+
+12/
+To deploy multiple similar workloads
+running some dockerized backend
+services which automation tool is more
+suited for this?
+Chef A
+Ansible B
+Terraform C
+Kubernetes D
+None of the above. E
+
+13/Which HTML5 element would you use to organize content so that the page maximizes a
+search engine's algorithm?
+<div
+id="CompanyNews
+">
+A
+<input>Company
+News</<input> B
+<article>Company
+News</article> C
+All of the above D
+None of the
+options are
+correct. E
+
+14/You are developing a RESTful web service. Which of the following statements is correct
+related to Content-Type header?
+Content-Type
+header is used to
+tell the server the
+format of data
+being sent in the
+request.
+A
+If Content-Type
+header
+is application/xm
+l then the server
+will try to parse it
+as XML data
+B
+REST APIs
+support applicatio
+n/json , applicati
+on/xml ,
+and text/xml
+Content-Type
+C
+The Supported
+request
+formats field
+appears only for
+PUT, POST
+resources
+D
+Can customize
+Content-Type in
+REST
+E
+All of the above F
+
+15/Which one of the following is an attribute selector?
+required A
+#required B
+input[required] C
+:required D
+
+16/Absolute positioning positions an object relative to what?
+The top-left corner
+of the browser
+window. A
+Positioned relative
+to the nearest
+positioned
+ancestor
+B
+Centered inside
+the window. C
+Centered inside its
+parent element. D
+None of the
+options are
+correct. E
+
+17/Which of the following is TRUE about the xpaths in the automation projects?
+Not useful in
+current automation
+tools, CSS
+selectors are
+better
+A
+Only dev-provided
+locators should be
+used to do the job
+B
+It still works to
+select parts of a
+text without
+attributes (plain
+text). XPath allows
+you to search and
+select taking into
+account the
+hierarchical
+structure of the
+XML
+C
+It is what is called
+the cascading style
+sheet language
+and is used to
+style
+D
+Is a cornerstone
+technology of the
+World Wide Web,
+alongside HTML
+and JavaScript.
+E
+18/Which Git command changes where the HEAD pointer points and modifies the contents of
+the working directory?
+checkout A
+pull B
+merge C
+rebase D
+All of the above. E
+
+19/Which of the following is NOT a valid method of a web worker?
+postMessage A
+onmessage B
+submit C
+terminate D
+
+20/How would you differentiate between BehaviorSubject and Observable in RxJS?
+In RxJS,
+BehaviourSubject
+is stateful. A
+BehaviourSubject
+shares data. B
+In RxJS,
+observable is
+stateless. C
+Observable
+creates a copy of
+data. D
+All of the above. E
+
+21/You are working on an event handler in
+JavaScript. You want to reference the
+object that raised the event easily.
+Select the JavaScript keyword.
+The it keyword
+provides a
+reference to the
+object.
+A
+The
+document.current
+property provides a
+reference to the
+object.
+B
+The this keyword
+provides a
+reference to the
+object. C
+No way is available
+other than to use a
+selector query to
+retrieve the object
+from
+the DOM.
+D
+22/Which followings are the ways you can access RESTful Microservices?
+With the use of the
+load-balanced rest
+template
+A
+With the use of
+multiple
+Microservices, you
+can easily use a
+RESTful template
+B
+If you have been
+given a large
+number of RESTful
+templates, then
+always make sure
+that you use the
+right one
+C
+All of above D
+
+23/Which of the following is an INCORRECT statement about TypeScript?
+It is interpreted like
+Javascript. A
+It is a superset of
+Javascript. B
+It supports static
+data types. C
+It is case sensitive.D
+All of the above E
+
+24/What would be the output of the following code?
+class TuringQueue<T> {
+ private data = [];
+ push = (item: T) => this.data.push(item);
+ pop = (): T => this.data.shift();
+}
+const turingQueue = new TuringQueue<number>();
+turingQueue.push(0);
+turingQueue.push("1");
+console.log(turingQueue);
+
+25/Which of the following is not a valid way to alter the size of an element?
+div{height: 50px;
+width: 50%;} A
+div{height: 50px;
+width: 50px;} B
+div{height: 50cm;
+width: 50px; C
+div{height: 50ft;
+width: 50ft;} D
+
+26/Select the element that isn't introduced in HTML5?
+<article> A
+<footer> B
+<hgroup> C
+<input> D
+
+27/When would you suggest using RXJS Observables over RxJS Promises?
+Promises are
+cancelable, so this
+is also an
+advantage over
+Observable.
+A
+By using promises,
+we can handle
+single or multiple
+events.
+B
+Promises allow
+formatting data. C
+By using an
+observable, we can
+handle single or
+multiple events.
+D
+A Promise is like a
+Stream. It is used
+to pass zero or
+more events where
+the callback is
+called for each
+event.
+E
+
+28/Select the right method that cancels a web worker?
+close A
+terminate B
+suspend C
+sleep D
+
+29/ To have a script run continually every 30 seconds, which line of code should be used?
+wsConnection.repe
+atWork("workerFile
+.js",30000);
+A
+setTimeout(functio
+n(){
+worker.postMessag
+e("");}, 30000);
+B
+setTimeout(
+worker.postMessag
+e(""), 30000);
+C
+setInterval(function
+(){
+worker.postMessag
+e("");}, 30000);
+D
+
+30/Inheritance is accomplished in JavaScript through the use of which construct?
+inherits keyword A
+implements
+keyword B
+this keyword C
+Prototypes D
+
+31/You are using jQuery to wire up
+events. Select the correct answer that
+explains why
+It allows you to
+assign the event
+listener to many
+elements at once
+via the selector
+syntax.
+A
+There is no
+difference wiring
+up events with
+jQuery versus
+addEventListener
+method.
+B
+jQuery works more
+efficiently in a loop.C
+jQuery allows both
+named and
+anonymous
+functions to be
+used as event
+listeners.
+D
