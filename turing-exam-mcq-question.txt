@@ -489,3 +489,32 @@ functions to be
 used as event
 listeners.
 D
+
+2/Degree of an Array
+The weight of an array is defined as the maximum number of occurrences of any integer in the array. Given an array of positive integers `k`, find the smallest possible length of a subarray of the array `k` that
+has the same weight as `k`. Integers should remain contiguous in the subarray.
+Example 1:
+Input: k = [1,2,2,3,1]
+Output: 2
+Example 2:
+Input: k = [1,2,2,3,1,4,2]
+Output: 6
+Constraints:
+• k.length will be between 1 and 50,000.
+• k[i] will be an integer between 0 and 49,999.
+
+
+3/Given an array, rotate the array to the right by k steps, where k is non-negative.
+Example 1:
+Input: nums = [1,2,3,4,5,6,7], k = 3
+Output: [5,6,7,1,2,3,4]
+Explanation:
+After rotating 1 steps to the right, array becomes: [7,1,2,3,4,5,6]
+After rotating 2 steps to the right, array becomes: [6,7,1,2,3,4,5]
+After rotating 3 steps to the right, array becomes: [5,6,7,1,2,3,4]
+Example 2:
+Input: nums = [-1,-100,3,99], k = 2
+Output: [3,99,-1,-100]
+Explanation:
+After rotating 1 steps to the right, array becomes: [99,-1,-100,3]
+After rotating 2 steps to the right, array becomes: [3,99,-1,-100]
