@@ -47,10 +47,17 @@ const myObject = {
   }
 };
 
-const myConstructor = function() {
-  // Constructor context
-  console.log(this); // Output: {}
-};
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+const john = new Person('John', 30);
+console.log(john); // Output: Person { name: 'John', age: 30 }
+
+In the example above, Person is a constructor function that takes in two arguments, 
+name and age. When we create a new object john using the new keyword and pass in the arguments 'John' and 30, this inside 
+the constructor function refers to the newly created john object.
 
 const myElement = document.getElementById('myElement');
 myElement.addEventListener('click', function() {
