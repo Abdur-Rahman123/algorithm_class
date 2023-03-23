@@ -12,3 +12,48 @@ function myfun(c,d){
 let test=myfun.bind({a:10,b:30},40,50);
 test();
 //myfun();
+
+
+///Explain this in javascript
+Here are the different ways in which this can be used:
+
+Global context: When this is used outside of any function or object, it refers to the global object. 
+In a browser environment, the global object is window.
+
+Function context: When this is used inside a function, its value is determined by how the function is called. 
+If the function is called as a method of an object, this refers to the object. 
+If the function is called without an explicit context, 
+this refers to the global object.
+
+Method context: When a function is called as a method of an object, this refers to the object itself.
+
+Constructor context: When a function is used as a constructor with the new keyword, 
+this refers to the newly created object.
+
+Event context: When a function is used as an event handler, this refers to the element that triggered the event.
+
+// Global context
+console.log(this); // Output: Window
+
+function myFunction() {
+  // Function context
+  console.log(this); // Output: Window
+}
+
+const myObject = {
+  myMethod() {
+    // Method context
+    console.log(this); // Output: myObject
+  }
+};
+
+const myConstructor = function() {
+  // Constructor context
+  console.log(this); // Output: {}
+};
+
+const myElement = document.getElementById('myElement');
+myElement.addEventListener('click', function() {
+  // Event context
+  console.log(this); // Output: myElement
+});
