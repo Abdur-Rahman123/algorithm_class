@@ -1,18 +1,43 @@
 call vs apply vs bind
 
-function myfun(c,d){
-    console.log(this);
-    console.log(this.a+this.b+c+d);
-}
-//one function share different object that time call,bind and apply will use.
-//difference between call and apply: when argument pass call will pass argument by seperating "," and apply will call by array type[] .
-// myfun.call({a:40,b:60},1,2);
-// myfun.apply({a:100,b:200},[2,3]);
-//bind will call when you have to bind something don't have to call now.this time you have to call bind.
-let test=myfun.bind({a:10,b:30},40,50);
-test();
-//myfun();
+call, apply, and bind are used in JavaScript to manipulate the context 
+(this) of a function when it is called.
 
+call and apply are used to call a function with a specific this value and arguments. 
+The difference between them is how arguments are passed to the function. call accepts 
+arguments as a comma-separated list, while apply accepts them as an array.
+
+function greet() {
+  console.log(`Hello, ${this.name}!`);
+}
+
+const person = { name: 'Alice' };
+
+greet.call(person); // outputs "Hello, Alice!"
+greet.apply(person); // outputs "Hello, Alice!"
+
+In the above example, call and apply are used to call the greet function with 
+person as the context (this), resulting in Hello, Alice! being output to the console.
+
+bind is used to create a new function that has a specific this value. It returns a new 
+function with the same functionality as the original function, but with a fixed context.
+function greet() {
+  console.log(`Hello, ${this.name}!`);
+}
+
+const person = { name: 'Alice' };
+
+const greetPerson = greet.bind(person);
+greetPerson(); // outputs "Hello, Alice!"
+
+In the above example, bind is used to create a new function greetPerson that has person
+as its context (this). When greetPerson is called, it outputs Hello, Alice! to the console.
+
+In summary, call, apply, and bind are used to manipulate the context (this) of a function when
+it is called. They allow you to call a function with a specific this value and create a new function
+with a fixed context.
+
+//difference between call and apply: when argument pass call will pass argument by seperating "," and apply will call by array type[] .
 
 ///Explain this in javascript
 Here are the different ways in which this can be used:
