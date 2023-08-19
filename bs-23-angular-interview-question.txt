@@ -311,6 +311,14 @@ AOT - Compile TypeScript during build phase.
     No need to deploy the compiler (Half of Angular size).
     More secure, original source not disclosed.
     Suitable for production builds.
+
+**JIT (Just-In-Time) Compilation:**
+In JIT compilation, TypeScript code is compiled to JavaScript in the browser at runtime. This means that the Angular application's source code is visible to developers because the TypeScript code is delivered to the browser and compiled there. This mode is primarily used during development as it provides faster iteration times, allowing developers to see changes immediately without the need for an extra build step.
+
+**AOT (Ahead-of-Time) Compilation:**
+In AOT compilation, the TypeScript code is compiled to JavaScript during the build process, before the application is deployed to the browser. This mode generates optimized and smaller JavaScript bundles, resulting in faster initial loading times and better performance for users. Since the code is compiled before deployment, the source code is not visible to users in the browser, providing a level of security through obfuscation.
+
+So, in both JIT and AOT modes, TypeScript is compiled to JavaScript. The main difference is where and when the compilation occurs. In JIT, it happens in the browser at runtime, and in AOT, it happens during the build process before deployment. The AOT mode offers better performance and security, making it suitable for production environments.
     
     advantage of using typescript over javascript ???
     
