@@ -137,6 +137,11 @@ Instead of blocking the code execution while waiting for these operations to fin
 
 In short, promises make it easier to write code that deals with asynchronous actions, making them more readable and maintainable.
 
+why async and await is used
+ Imagine you're making a sandwich, but the ingredients take time to prepare. Using async and await in JavaScript is like asking someone else to handle the slow parts while you do other things.
+
+When you say async in front of a function, you're telling JavaScript that this function might take some time to finish, so it won't block everything else. And when you use await inside that function, you're saying "wait here until this slow task is done". This way, you can keep your code tidy and easier to read, just like making a sandwich with the slow parts being handled without you standing around.
+
 generics type in typescript
 function getvalue <Type> (args:Type):Type{
     return args;
