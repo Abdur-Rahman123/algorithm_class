@@ -131,33 +131,11 @@ The For/Of Loop
 
 why promise is used???
 
- One of the arguments for using promises is getting rid of the so-called "callback hell", which looks something like this:
- setTimeout(function () {
-    setTimeout(function() {
-        setTimeout(function() {
-            // do something
-        }); 
-    }); 
-});
-simply using promises alone will also not prevent that, like in the following sample:
-samplePromise().then(function () {
-    samplePromise().then(function () {
-        samplePromise().then( function () {
-            // do something
-        });
-    });
-});
-That being said, there's one use case that might arguably benefit from a promise, 
-and that is when exceptions from more than one asynchronous call could be caught by the same catch block:
-new Promise(function (resolve, reject) {
-    resolve("Blah");
-}).then(function () {
-    // do something
-}).then(function () {
-    // do something
-}).catch(function (reason) {
-    // error handling
-});
+ In JavaScript, a promise is used to handle asynchronous operations in a more organized and manageable way. It's like a special container for a value that might not be available immediately, such as the result of an API request or reading a file.
+
+Instead of blocking the code execution while waiting for these operations to finish, which could make the program feel slow or unresponsive, promises allow you to continue doing other tasks. When the asynchronous operation completes, the promise can either be fulfilled (resolved) with the result, or an error can be thrown (rejected).
+
+In short, promises make it easier to write code that deals with asynchronous actions, making them more readable and maintainable.
 
 generics type in typescript
 function getvalue <Type> (args:Type):Type{
