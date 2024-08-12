@@ -48,3 +48,16 @@ suppose a shopkeeper care about card, he don't care about it's David card or cre
 class then we have hardcoded it wheather it's david card or crdit card but
 if we use interface and implement same interface for david and credit card.
 we don't have to hardcode it.we only have to use this interface. 
+
+Simple Explanation:
+Without DIP:
+
+Imagine you're building a toy car. The car has a motor directly connected to a battery.
+The car's motor depends on the battery being exactly the way it is (same voltage, size, etc.). If you want to change the battery or use a different power source, you'd have to change the motor as well.
+With DIP:
+
+Instead of connecting the motor directly to a battery, you connect it to a power interface. The interface says, "I don't care where the power comes from, just give me power."
+Now, the motor doesn't need to know if the power comes from a battery, solar panel, or some other source. You can swap out the power source without changing the motor.
+Technical Explanation:
+Without DIP: High-level modules (like the car's motor) depend on low-level modules (like the battery).
+With DIP: Both high-level and low-level modules depend on abstractions (interfaces or abstract classes), which define the essential behavior without being tied to specific implementations.
