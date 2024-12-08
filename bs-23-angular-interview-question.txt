@@ -36,6 +36,13 @@ let user = {
     }
 };
 user.show_ar(1, 2, 3);
+When to Use Arrow Functions:
+
+Use arrow functions when you don’t need a standalone this context or the arguments object.
+
+Use normal functions when you need dynamic this binding or access to arguments.
+
+
 
 Normal Function: Can be used as constructors to create objects using the new keyword.
 Arrow Function: Cannot be used as constructors. They lack a prototype property.
